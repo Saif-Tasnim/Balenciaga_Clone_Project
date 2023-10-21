@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProductCard.css';
+
 
 const ProductCard = ({ image, index }) => {
 
@@ -19,29 +19,14 @@ const ProductCard = ({ image, index }) => {
             style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover' }}
             className='max-w-full h-[120vh] relative'
         >
-            {/* <div className='absolute bottom-4 left-[45%]'>
-                <h1 className='font-bold text-2xl'> {productName} </h1>
-                <button className='btn border-2 border-black rounded-md my-4'>
-                    <span className='relative'>
-                        <span className='opacity-0 absolute bottom-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100'>
-                            Shop Now
-                        </span>
-                        <span className='group-hover:translate-y-[-2px] transition-transform duration-300 ease-in-out'>
-                            Shop Now
-                        </span>
-                    </span>
-                </button>
-            </div> */}
-
-            <div className='absolute bottom-4 left-[45%]'>
-                <h1 className='font-bold text-2xl'>{productName}</h1>
-                <button className='btn border-2 border-black rounded-md my-4'>
-                    <span className='text-invisible'>
-                        Shop Now
-                    </span>
+            <div className='absolute bottom-3 left-[45%]'>
+                <h1 className={`font-bold text-2xl ${index===4 ? 'text-white' : 'text-black'}`}> {productName} </h1>
+                <button className='btn border-2 border-black rounded-md my-4 ml-3 hover:bg-green-600 hover:text-white'>
+                    Shop Now
                 </button>
             </div>
 
+         
 
         </div>
     );
