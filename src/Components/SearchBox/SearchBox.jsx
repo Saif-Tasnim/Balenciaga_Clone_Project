@@ -3,7 +3,7 @@ import searchIcon from '../../assets/search_icon.png';
 
 const SearchBox = () => {
     return (
-        <div className='pt-[51px] flex gap-1 border-b-[1px] border-black items-center'>
+        <div className='pt-[55px] flex gap-1 border-b-[1px] border-black items-center'>
              <img src={searchIcon} 
              className='w-5 h-5 ml-8'
              alt="" />

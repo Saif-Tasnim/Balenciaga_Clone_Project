@@ -22,7 +22,7 @@ const Header = () => {
 
 
     return (
-        <div className="navbar shadow-none border-b-[1px] border-[#000000] py-0 fixed z-10">
+        <div className="navbar shadow-none border-b-[1px] border-[#000000] py-0 pb-2 fixed z-10">
 
             <div className="navbar-start">
                 {
