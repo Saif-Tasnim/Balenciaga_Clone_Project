@@ -1,8 +1,13 @@
-# React + Vite
+## Project Name
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Clone Project Of Balenciaga E-Commerce Site
 
-Currently, two official plugins are available:
+### Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a job task project for Ena Ema Technologies. In This project the task is to clone a e-commerce website with frontend technology (React.js). I have designed the frontend part or the homepage of this project as internship position for this company
+
+### Live Demo
+
+You can view the live demo of this project [here](https://65340e5091734848ad43facc--famous-naiad-097c6c.netlify.app/).
+
+<!-- Add more sections and details about your project below -->
