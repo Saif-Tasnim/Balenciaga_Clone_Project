@@ -1,9 +1,10 @@
 import React from 'react';
+import SearchBox from '../../Components/SearchBox/SearchBox';
 
 const HomePage = () => {
     return (
         <div>
-            This is Home Page
+           <SearchBox></SearchBox>
         </div>
     );
 };
