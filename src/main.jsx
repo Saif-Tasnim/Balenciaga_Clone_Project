@@ -23,6 +23,10 @@ const router = createBrowserRouter([
         path: "womenPage",
         element: <WomenPage></WomenPage>
       },
+      {
+        path: "menPage",
+        element: <WomenPage></WomenPage>
+      },
     ]
   },
 ]);

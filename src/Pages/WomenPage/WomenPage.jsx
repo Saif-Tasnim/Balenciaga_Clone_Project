@@ -16,7 +16,7 @@ const WomenPage = () => {
     // console.log(womenData);
 
     return (
-        <div>
+        <div className='grid grid-cols-2 gap-5 max-w-[94%] mx-auto'>
            {
             womenData.map(wd => 
             <ProductCard
