@@ -60,7 +60,9 @@ const Header = () => {
 
     const lastLink = <>
         <Link className="navbar-item uppercase text-sm hover:border-[1px] hover:border-[#242424] hover:p-2 hover:rounded-md"> Client Service </Link>
-        <Link className="navbar-item uppercase text-sm hover:border-[1px] hover:border-[#242424] hover:p-2 hover:rounded-md"> Login </Link>
+        
+        <Link to="/entry/login" className="navbar-item uppercase text-sm hover:border-[1px] hover:border-[#242424] hover:p-2 hover:rounded-md"> Login </Link>
+        
         <Link className="navbar-item uppercase text-sm hover:border-[1px] hover:border-[#242424] hover:p-2 hover:rounded-md"> <img src={bookmark} className='w-5' alt="" /> </Link>
     </>
 
