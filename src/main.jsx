@@ -9,6 +9,7 @@ import {
 import Main from './Layout/Main.jsx';
 import HomePage from './Pages/HomePage/HomePage.jsx';
 import WomenPage from './Pages/WomenPage/WomenPage.jsx';
+import MenPage from './Pages/MenPage/MenPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "menPage",
-        element: <WomenPage></WomenPage>
+        element: <MenPage></MenPage>
       },
     ]
   },

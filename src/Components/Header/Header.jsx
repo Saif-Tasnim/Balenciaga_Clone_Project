@@ -15,7 +15,7 @@ const Header = () => {
                     <Link to='/womenPage' className="dropdown-item text-sm hover:underline mr-8 mt-2"> New Arrivals - Women </Link>
                 </div>
                 <div>
-                    <Link tabIndex="-1" className="dropdown-item text-sm hover:underline mr-7"> New Arrivals - Men </Link>
+                    <Link to='/menPage' tabIndex="-1" className="dropdown-item text-sm hover:underline mr-7"> New Arrivals - Men </Link>
                 </div>
 
             </div>
@@ -35,8 +35,8 @@ const Header = () => {
         <div className="dropdown dropdown-hover">
             <label className="navbar-item uppercase text-sm w-28 hover:border-[1px] hover:border-[#242424] hover:p-1 hover:rounded-md" tabIndex="0">Men</label>
             <div className="dropdown-menu dropdown-menu-bottom-right mt-5 rounded-md border-[1px] border-black">
-                <Link className="dropdown-item text-sm hover:underline"> Men </Link>
-                <Link tabIndex="-1" className="dropdown-item text-sm hover:underline">Men Dress</Link>
+                <Link to='/menPage' className="dropdown-item text-sm hover:underline"> Men </Link>
+                <Link to='/menPage' tabIndex="-1" className="dropdown-item text-sm hover:underline">Men Dress</Link>
                 
             </div>
         </div>
@@ -46,7 +46,7 @@ const Header = () => {
             <label className="navbar-item uppercase text-sm w-28 hover:border-[1px] hover:border-[#242424] hover:p-1 hover:rounded-md" tabIndex="0">Gifts</label>
             <div className="dropdown-menu dropdown-menu-bottom-right mt-5 rounded-md border-[1px] border-black">
                 <Link className="dropdown-item text-sm hover:underline">Gifts</Link>
-                <Link tabIndex="-1" className="dropdown-item text-sm hover:underline">Men</Link>
+                <Link to='/menPage' tabIndex="-1" className="dropdown-item text-sm hover:underline">Men</Link>
                 <Link to='/womenPage' tabIndex="-1" className="dropdown-item text-sm hover:underline">Women</Link>
             </div>
         </div>
