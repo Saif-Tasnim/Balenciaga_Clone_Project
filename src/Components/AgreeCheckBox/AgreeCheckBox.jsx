@@ -1,8 +1,8 @@
 import React from 'react';
 
 const AgreeCheckBox = ({ text }) => {
-    return (
 
+    return (
         <div className='mb-7'>
             <label className="flex cursor-pointer gap-2">
                 <input type="checkbox" className="checkbox" />
