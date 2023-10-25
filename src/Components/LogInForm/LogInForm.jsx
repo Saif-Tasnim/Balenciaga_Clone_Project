@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import InputField from '../InputField/InputField';
+import EntrtyButton from '../EntryButton/EntrtyButton';
 
 const LogInForm = () => {
     return (
@@ -22,19 +23,18 @@ const LogInForm = () => {
                     </label>
                 </div>
             </div>
-            <div className="form-field pt-5">
-                <div className="form-control justify-between">
-                    <button type="button" className="btn bg-black text-white rounded-md w-full">NEXT</button>
-                </div>
-            </div>
 
+            <EntrtyButton
+                text="NEXT"
+            ></EntrtyButton>
+    
             <div className="form-field my-3">
                 <div className="form-control justify-center">
                     <Link to="/entry/register" className="link underline text-sm">Create a profile </Link>
                 </div>
             </div>
         </div>
-      
+
     );
 };
 
