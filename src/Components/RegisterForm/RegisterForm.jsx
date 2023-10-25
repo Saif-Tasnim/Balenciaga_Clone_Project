@@ -1,71 +1,62 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import InputField from '../InputField/InputField';
+import SelectField from '../SelectField/SelectField';
+import AgreeCheckBox from '../AgreeCheckBox/AgreeCheckBox';
 
 const RegisterForm = () => {
+    const civilsOptions = ["Mr", "Miss , Mrs , Ms", "Mix", "I'd rather not say"];
+
+    const country = ["Australia", "New Zealand", "Bangladesh", "China", "USA", "Canada", "Finland"]
+
     return (
         <div>
+
             {/* civility */}
-            <label className="form-label"> <span> Civility <sup>*</sup></span> </label>
-            <select className="select select-block border-black rounded-md mt-1 mb-4">
-                <option>Mr.</option>
-                <option> Miss , Mrs, Ms </option>
-                <option> Mix </option>
-                <option> I'd rather not say </option>
-            </select>
+            <SelectField
+                head="Civility"
+                options={civilsOptions}
+            ></SelectField>
 
             {/* first name */}
-            <div className="form-field mb-4">
-                <label className="form-label"> <span>First Name <sup>*</sup></span> </label>
-                <input type="text" className="input max-w-full border-black rounded-md" />
-            </div>
+            <InputField
+                head="First Name"
+                type="text"
+            ></InputField>
 
             {/* last name */}
-            <div className="form-field mb-4">
-                <label className="form-label"> <span>Last Name <sup>*</sup></span> </label>
-                <input type="text" className="input max-w-full border-black rounded-md" />
-            </div>
+            <InputField
+                head="Last Name"
+                type="text"
+            ></InputField>
+
 
             {/* birth date */}
-            <div className="form-field mb-4">
-                <label className="form-label"> <span>Birth Date (DD/MM/YYYY)
-                    <sup>*</sup></span> </label>
-                <input type="text" className="input max-w-full border-black rounded-md" />
-            </div>
-            
-            {/* email */}
-            <div className="form-field mb-4">
-                <label className="form-label"> <span>Email
-                    <sup>*</sup></span> </label>
-                <input type="email" className="input max-w-full border-black rounded-md" />
-            </div>
-            
-            {/* password */}
-            <label className="form-label mb-1"> <span>Password
-                <sup>*</sup></span> </label>
-            <div className="form-control flex-col relative w-full mb-4">
-                <input type="password" className="input input-lg max-w-full border-black rounded-md" />
+            <InputField
+                head="Birth Date (DD/MM/YYYY)"
+                type="text"
+            ></InputField>
 
-                <span className="absolute inset-y-0 right-4 inline-flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-content3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                    </svg>
-                </span>
-            </div>
-            
+            {/* email */}
+            <InputField
+                head="Email"
+                type="email"
+            ></InputField>
+
+            {/* password */}
+            <InputField
+                head="Password"
+                type="password"
+            ></InputField>
+
             {/* country */}
-            <label className="form-label"> <span> Country of Residence <sup>*</sup></span> </label>
-            <select className="select select-block border-black rounded-md mt-1 mb-4">
-                <option>Australia</option>
-                <option> New Zealand </option>
-                <option> Bangladesh </option>
-                <option> China </option>
-                <option> USA </option>
-                <option> Canada </option>
-                <option> Finland </option>
-            </select>
-            
+            <SelectField
+                head="Country of Residence"
+                options={country}
+            ></SelectField>
+
             {/* text */}
-            <div className='h-24 overflow-y-scroll my-6'>
+            <div className='h-24 overflow-y-scroll my-6 mb-16'>
                 <p> <b>You are invited to read our privacy policy in full. In any event,</b> here are some key points we would like to share with you:
 
                     You are about to create your Balenciaga profile. This will allow Balenciaga to offer you a personalized and tailored experience, provide you with products, services and information you request from Balenciaga and communicate with you. All your personal information will be kept, used and linked to your Balenciaga profile. Your profile could include information we obtained directly from you as well as from our retailers and other commercial partners. As we operate globally, we may securely share your personal information with companies of our group and our approved partners located around the world. We will implement safeguards to protect your personal information. We may use any contact information you share with us to contact you.
@@ -75,30 +66,19 @@ const RegisterForm = () => {
             </div>
 
             {/* checkbox */}
-            <div className='mt-24 mb-7'>
-                <label className="flex cursor-pointer gap-2">
-                    <input type="checkbox" className="checkbox" />
-                    <span>I have understood the <u>privacy policy</u> and I agree to <u>Terms of use </u></span>
-                </label>
-            </div>
 
-            <div className='mb-7'>
-                <label className="flex cursor-pointer gap-2">
-                    <input type="checkbox" className="checkbox" />
-                    <span>
-                        I would like to receive updates about Balenciaga new activities, exclusive products, tailored services and to have a personalised client experience based on my interests.</span>
-                </label>
-            </div>
+            <AgreeCheckBox
+                text="I have understood the privacy policy and I agree to Terms of use"
+            ></AgreeCheckBox>
 
-            <div className='mb-7'>
-                <label className="flex cursor-pointer gap-2">
-                    <input type="checkbox" className="checkbox" />
-                    <span>
-                        I confirm that I am 18 years old </span>
-                </label>
-            </div>
-            
-            
+            <AgreeCheckBox
+                text=" I would like to receive updates about Balenciaga new activities, exclusive products, tailored services and to have a personalised."
+            ></AgreeCheckBox>
+
+            <AgreeCheckBox
+                text=" I confirm that I am 18 years old"
+            ></AgreeCheckBox>
+
             {/* button */}
             <div className='my-12 text-center w-full'>
                 <button className='btn bg-black text-white'>Create My Profile </button>
