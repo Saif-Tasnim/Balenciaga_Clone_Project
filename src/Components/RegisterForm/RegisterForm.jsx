@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import InputField from '../InputField/InputField';
 import SelectField from '../SelectField/SelectField';
 import AgreeCheckBox from '../AgreeCheckBox/AgreeCheckBox';
+import EntryButton from '../EntryButton/EntryButton';
+import Switching from '../Switching/Switching';
 
 const RegisterForm = () => {
     const civilsOptions = ["Mr", "Miss , Mrs , Ms", "Mix", "I'd rather not say"];
@@ -80,13 +82,15 @@ const RegisterForm = () => {
             ></AgreeCheckBox>
 
             {/* button */}
-            <div className='my-12 text-center w-full'>
-                <button className='btn bg-black text-white'>Create My Profile </button>
-            </div>
+            <EntryButton
+                text="Create My Profile"
+            ></EntryButton>
 
-            <div>
-                Already have a profile ? <Link to='/entry/login' className='underline'>Log In</Link>
-            </div>
+            <Switching
+                head="Already have a profile ?"
+                link="login"
+                text="Log In"
+            ></Switching>
 
         </div>
     );

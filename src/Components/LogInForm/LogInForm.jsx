@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import InputField from '../InputField/InputField';
-import EntrtyButton from '../EntryButton/EntrtyButton';
+import EntryButton from '../EntryButton/EntryButton';
 
 const LogInForm = () => {
     return (
@@ -24,9 +24,9 @@ const LogInForm = () => {
                 </div>
             </div>
 
-            <EntrtyButton
+            <EntryButton
                 text="NEXT"
-            ></EntrtyButton>
+            ></EntryButton>
     
             <div className="form-field my-3">
                 <div className="form-control justify-center">
