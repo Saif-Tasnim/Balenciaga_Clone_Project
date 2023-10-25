@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import InputField from '../InputField/InputField';
 import EntryButton from '../EntryButton/EntryButton';
+import Switching from '../Switching/Switching';
 
 const LogInForm = () => {
     return (
@@ -27,12 +28,13 @@ const LogInForm = () => {
             <EntryButton
                 text="NEXT"
             ></EntryButton>
-    
-            <div className="form-field my-3">
-                <div className="form-control justify-center">
-                    <Link to="/entry/register" className="link underline text-sm">Create a profile </Link>
-                </div>
-            </div>
+
+            <Switching
+                link="register"
+                text="Create a profile"
+            ></Switching>
+
+
         </div>
 
     );
